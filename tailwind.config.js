@@ -34,7 +34,15 @@ export default {
         'rose-800': 'hsl(332, 51%, 32%)',
         'rose-50': 'hsl(330, 100%, 98%)',
       },
+      listStyleType:{
+        decimalRed: 'decimal red'
+      },
     },
+  },
+  variants: {
+    extend: {
+      listStyleType: ['before']
+    }
   },
   plugins: [
     require('@tailwindcss/typography')
